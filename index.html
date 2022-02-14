@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 1.0 targetiraj sve google links:*/
+    a[href^="https://www.google.com"] {
+        color: green
+    }
+
+    /* 2.0 targetiraj https://www.link-group.eu link:*/
+
+    /* a[href^="https://www.link-group.eu"] {
+        color: red;
+    } */
+
+    a:last-child {
+        color: red;
+    }
+
+    /*3.0 Stilizovanje second_div sekcije,p: odd:red i p:even : blue */
+    .second_div p:nth-child(odd) {
+
+        color: blue;
+    }
+
+    .second_div p:nth-child(even) {
+        color: red;
+    }
+
+    /*4.0 Stilizovanje p2 i p3, dodati txt "NEW" i obojiti u zuto*/
+
+    .first_div p::after {
+        content: "NEW";
+        color: yellow;
+        font-style: italic;
+
+    }
+
+    /*5.0 Stilizovanje second_div sekcije,last child p: style italic */
+    .second_div p:last-child:hover {
+        cursor: pointer;
+        font-style: italic;
+    }
+</style>
+
+<body>
+    <h1>Main Heading</h1>
+    <p>Paragraph 1</p>
+    <div>
+        <a href="https://www.google.com/">Google</a>
+        <a href="https://www.google.com/doodles">Google Doddles</a>
+        <a href="https://www.link-group.eu/">Goto Link Group</a>
+    </div>
+    <div class="first_div">
+        <h2>Subheading</h2>
+        <p>Paragraph 2</p>
+        <p>Paragraph 3</p>
+    </div>
+    <div class="second_div">
+        <h3>Sub subheading</h3>
+        <p>Paragraph 4</p>
+        <p>Paragraph 5</p>
+        <p>Paragraph 6</p>
+        <p>Paragraph 7</p>
+        <p>Paragraph 8</p>
+        <p>Paragraph 9</p>
+        <p>Paragraph 10</p>
+    </div>
+</body>
+
+</html>
