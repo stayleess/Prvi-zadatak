@@ -15,17 +15,14 @@
 
     /* 2.0 targetiraj https://www.link-group.eu link:*/
 
-    /* a[href^="https://www.link-group.eu"] {
-        color: red;
-    } */
-
-    a:last-child {
+    a[href^="https://www.link-group.eu"] {
         color: red;
     }
 
+
+
     /*3.0 Stilizovanje second_div sekcije,p: odd:red i p:even : blue */
     .second_div p:nth-child(odd) {
-
         color: blue;
     }
 
@@ -42,8 +39,8 @@
 
     }
 
-    /*5.0 Stilizovanje second_div sekcije,last child p: style italic */
-    .second_div p:last-child:hover {
+    /*5.0 Stilizovanje second_div sekcije, style italic */
+    body>p:nth-of-type(3):hover {
         cursor: pointer;
         font-style: italic;
     }
